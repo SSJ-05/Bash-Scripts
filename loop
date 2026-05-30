@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Loop Bash Script, 30.05.26, ZeroK
+
+
+# for loop
+for word in ale bat cat dad; do
+    echo "word is $word" 
+done
+
+# run this in terminal
+# bash -n loop (checks for syntax errors)
+# echo $? (returns 0 on successful execution of last command in terminal)
