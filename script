@@ -1,4 +1,4 @@
-# ! usr/bin/env bash
+#! usr/bin/env bash
 # shebang is required at the top of the bash script to indicate its a bash script
 # First Bash Script, 30.05.26, ZeroK
 
