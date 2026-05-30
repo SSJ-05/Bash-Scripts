@@ -1,0 +1,14 @@
+# ! usr/bin/env bash
+# shebang is required at the top of the bash script to indicate its a bash script
+# First Bash Script, 30.05.26, ZeroK
+
+# ls -alh
+# variables
+msg="Hello ZeroK"
+dt=$(date)
+sys=$(uname)
+
+# print
+echo "$msg"
+echo "Today is $dt"
+echo "You are on $sys"
