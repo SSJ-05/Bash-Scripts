@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Script takes in user input thru if-else loop, 01.06.26, ZeroK
+
+# take input from user thru read
+# if-else loop - check if arg is given, else take user i/p
+# -n checks whether variable $1 is set
+if [[ -n $1 ]]; then
+    name=$1
+else
+    read -p "Enter your name : " name
+fi  # close the if-else loop with fi
+
+
+# print
+echo "Hello $name"
+echo "Today is" $(date)
+
+# try to pipe this, run in cli
+# echo zerok | ./usr_ip
+
+# run this ./usr_ip zerok (with arg) or ./usr_ip (w/o arg)
