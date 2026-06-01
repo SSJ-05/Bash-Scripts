@@ -3,7 +3,8 @@
 
 
 # for loop
-for word in ale bat cat dad; do
+# $@ creates an array that stores n number of args
+for word in "$@"; do
     echo "word is $word" 
 done
 
