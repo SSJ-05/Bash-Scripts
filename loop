@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Loop Bash Script, 30.05.26, ZeroK
+# 01.06.26: added $@ for multiple args in input
 
 
 # for loop
@@ -7,6 +8,9 @@
 for word in "$@"; do
     echo "word is $word" 
 done
+
+# run this
+# ./loop one apple two bananas three cantaloupes
 
 # run this in terminal
 # bash -n loop (checks for syntax errors)
