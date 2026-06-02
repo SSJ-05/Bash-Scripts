@@ -5,10 +5,10 @@
 # if-else loop - check if arg is given, else take user i/p
 # -n checks whether variable $1 is set
 if [[ -n $1 ]]; then
-    name=$1
+    name=$1                             # to take multiple words as i/p use $@
 else
-    read -p "Enter your name : " name
-fi  # close the if-else loop with fi
+    read -p "Enter your name : " name   # read -p = read prompt i.e. name
+fi                                      # close the if-else loop with fi
 
 
 # print

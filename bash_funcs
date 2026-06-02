@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# bash functions, 02.06.26, ZeroK
+
+# func example
+greet() {
+    local name=$1           # use the word 'local' to limit the scope of variable to the current func
+    echo "Hello $name (from func)"
+}
+
+for name in "$@"; do
+    ./usr_ip "$name"                    # this script calls another script
+    # ./usr_ip "$name" >> file.txt      # o/p of this line can be appended in a file
+done
+
+# call func greet() and store it in a variable
+# var=$(greet $name)
+# echo "var is $var"
+
+# check if func executes successfully (0 == success)
+greet $name
+echo $?
