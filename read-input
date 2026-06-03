@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# read user input, 03.06.26, ZeroK
+
+
+# use -r = raw string - to allow backslashes '\'
+# read -r ip
+# echo "you said $ip"
+
+# run this in cli
+# cat file.txt | ./read-input   -> it only reads the first word
+# to read whole file - use while loop
+while read -r line; do
+    echo "$line"
+done
+
+# this has the same function as 'cat' command - just slower !
+
+
+# compare the output of these 2 commands
+# echo hello | xxd
+# echo -n hello | xxd   -> removes newline character '\n'
+
+
+# run this in cli to read the contents of file
+# ./read-input < file.txt 
