@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# conditionals, 03.06.26, ZeroK
+
+
+# a=2
+# b=3
+
+# # take i/p from user
+# read -p "enter first num : " a
+# read -p "enter second num : " b
+#
+# # then compare
+# if [[ $a == $b ]]; then
+#     echo "a is equal to b"
+# else 
+#     echo "a is not equal to b"
+# fi
+
+
+# # check if a file exists with -f 
+# read -p "enter file name : " filename
+#
+# if [[ -f $filename ]]; then
+#     echo "$filename exists"
+# else
+#     echo "$filename does not exist"
+# fi
+#
+#
+# # while loop
+# while [[ -f $filename ]]; do
+#     echo "$filename exists"     # print the status of file while it exists
+#     sleep 2
+# done
+#
+# # in cli run: rm (file name)
+# echo "$filename is deleted"
+
+
+# check if commands execute
+# if echo hi; then
+# if ls -lh; then
+if true; then
+# if false; then
+    echo "EXIT_SUCCESS"
+else
+    echo "EXIT_FAILURE"
+fi
