@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# for loops, 03.06.26, ZeroK
+
+# for name in $@; do
+#     echo "name is $name"
+# done
+
+
+# print from a to f
+# for name in {a..f}; do
+#     echo "name is $name"
+# done
+
+# print till limit c-style
+limit=10
+for (( i = 0; i < limit; ++i )); do
+    echo "number is $i"
+done
+
