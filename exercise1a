@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# exercise, 04.06.26, ZeroK
+# fd 0 - stdin  &0
+# fd 1 - stdout &1
+# fd 2 - stderr &2
+
+
+hello() {
+    local name=$1
+    echo "hello $name"
+}
+
+goodbye() {
+    local name=$1
+    echo "goodbye $name"
+}
+
+                                    # use '(())' for arithmetic operations
+if (($# == 0)); then                # '$#' checks how many args given
+    echo "enter name " >&2          # redirect this statement in file descriptor fd 2
+    exit 1                          # acts as return (though using 'return' would throw error)
+fi                                  # exit with error code 1
+
+
+
+for name in "$@"; do
+    case "$name" in
+        # z*) echo hello   "$name"    ;;
+        # Z*) echo hello   "$name" !! ;;
+        z* | Z*) echo hello "$name" ;;
+        *)  echo goodbye "$name"    ;;
+    esac
+done
