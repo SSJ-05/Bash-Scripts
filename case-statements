@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# case statements, 04.06.26, ZeroK
+
+
+S=$1
+
+case "$S" in
+    zerok)
+        echo hi zerok
+        ;;      # acts as 'break'
+    ZeroK) 
+        echo hi Sir
+        ;;
+    *)          # '*' acts as default case
+        echo please leave
+        ;;
+esac    # close case loop
