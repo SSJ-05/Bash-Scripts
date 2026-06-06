@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# arrays, 06.06.26, ZeroK
+
+array=(  
+          zerok
+          zk
+          ZeroK
+          "hi there"  
+       )
+# echo "$array"   # only echos first element
+
+# echo "${array[1]}"
+
+# echo all elements
+# for ((i = 0; i < 4; ++i)); do
+#     echo "index $i : ${array[i]}"
+# done
+
+# or
+for i in "${array[@]}"; do
+    echo "$i"
+done
+
+# index in reverse
+# echo "index -1 : ${array[-1]}"
+# echo "index -2 : ${array[-2]}"
+# echo "index -3 : ${array[-3]}"
+
+
+# copy array and add new elements
+# newarray=( "${array[@]}" buddy mister)
+
+# or just copy array
+newarray=( "${array[@]}" )
+# and extend the new array by adding new elements
+newarray+=( buddy mister )
+
+echo "new array : "
+for j in "${newarray[@]}"; do
+    echo "$j"
+done
+
+# in cli
+# declare array : array=( a b c )
+# declare array : declare -p array
+# length of array : echo "${#array}"
+# length of string : echo "${#var}"
